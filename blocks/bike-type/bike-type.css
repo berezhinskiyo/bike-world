@@ -1,0 +1,7 @@
+.bike-type{
+	display: flex;
+	flex-direction: column;
+	justify-content: left;
+	gap: 50px;
+	margin-top: 120px;
+}

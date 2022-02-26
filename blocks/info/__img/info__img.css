@@ -1,0 +1,9 @@
+.info__img
+{
+	box-sizing: border-box;
+	width: 610px;
+	height: 836px;
+	margin-top: 20px;
+	background: url('../../../images/title_image1.png');
+	background-repeat: no-repeat;
+}

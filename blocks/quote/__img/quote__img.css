@@ -1,0 +1,10 @@
+.quote__img
+{
+	box-sizing: border-box;
+	width: 650px;
+	height: 460px;
+	margin: 0;
+	padding: 0;
+	background: url('../../../images/title_image2.png');
+	background-repeat: no-repeat;
+}

@@ -1,0 +1,13 @@
+.quote__details__title{
+	box-sizing: border-box;
+	width: 470px;
+	margin: 0;
+	padding: 0;
+	color: #151515;
+	font-weight: 600;
+	font-size: 34px;
+	font-style: normal;
+	line-height: calc(44 / 34);
+	text-align: center;
+	border: 0;
+}

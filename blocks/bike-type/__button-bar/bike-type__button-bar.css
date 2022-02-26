@@ -1,0 +1,6 @@
+.bike-type__button-bar
+{
+	display: flex;
+	flex-direction: row;
+	gap: 20px;
+}
