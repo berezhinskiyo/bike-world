@@ -1,7 +1,22 @@
 .info{
 	position: relative;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	width: calc(1440px - 120px);
+	z-index: 0;
+	display: grid;
+	grid-template-rows: 200px 212px 50px min-content;
+	grid-template-columns: 710px 610px;
+	grid-template-areas:
+		'title img'
+		'text img'
+		'link img'
+		'bike-block img';
+	padding: 0 0 0 120px;
+}
+
+@media all and (max-width: 320px) {
+	.info {
+		position: relative;
+		width: 320px;
+		margin-top: 40px;
+		padding: 0;
+	}
 }

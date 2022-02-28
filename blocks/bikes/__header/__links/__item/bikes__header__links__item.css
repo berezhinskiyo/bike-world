@@ -1,0 +1,8 @@
+.bikes__header__links__item {
+	color: #151515;
+	font-weight: 600;
+	font-size: 18px;
+	font-style: normal;
+	line-height: calc(28 / 18);
+	opacity: 1;
+}

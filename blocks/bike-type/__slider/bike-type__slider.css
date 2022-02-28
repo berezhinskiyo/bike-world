@@ -1,7 +1,5 @@
 .bike-type__slider
 {
-	display: flex;
-	flex-direction: row;
-	gap: 40px;
-	margin-top: 30px;
+	position: relative;
+	box-sizing: border-box;
 }

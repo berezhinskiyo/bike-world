@@ -6,3 +6,9 @@
 	line-height: calc(18 / 14);
 	text-decoration: none;
 }
+
+@media all and (max-width: 320px) {
+	.header__link {
+		visibility: hidden;
+	}
+}

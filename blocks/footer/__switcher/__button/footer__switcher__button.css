@@ -1,0 +1,9 @@
+.footer__switcher__button
+{
+	align-self: flex-end;
+	width: 28px;
+	height: 28px;
+	background-repeat: no-repeat;
+	background-position: center;
+
+}

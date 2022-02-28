@@ -1,0 +1,10 @@
+.train__img
+{
+	box-sizing: border-box;
+	width: 580px;
+	height: 460px;
+	margin: 0;
+	padding: 0;
+	background: url('../../../images/trainigs.png');
+	background-repeat: no-repeat;
+}

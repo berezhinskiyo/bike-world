@@ -1,0 +1,7 @@
+.footer__switcher-box
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin: 24px 123px 60px 0;
+}

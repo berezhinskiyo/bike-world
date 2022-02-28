@@ -1,0 +1,8 @@
+.bikes__slider__item{
+	display: flex;
+	flex-direction: column;
+	justify-content: left;
+	gap: 42px;
+	margin: 0;
+	list-style-type: none;
+}

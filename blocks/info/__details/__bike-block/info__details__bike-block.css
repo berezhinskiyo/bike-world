@@ -1,9 +1,0 @@
-.info__details__bike-block
-{
-
-	display: flex;
-	flex-direction: row;
-	gap: 30px;
-	box-sizing: border-box;
-	padding: calc(167px - 50px) 0 0 0;
-}

@@ -1,8 +1,6 @@
 .bike-type__slider__image
 {
 	box-sizing: border-box;
-	width: 650px;
+	width: 640px;
 	height: 400px;
-	background-repeat: no-repeat;
-	background-size: contain;
 }

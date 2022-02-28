@@ -1,0 +1,6 @@
+.train__details{
+	display: flex;
+	flex-direction: column;
+	gap: 50px;
+	box-sizing: border-box;
+}

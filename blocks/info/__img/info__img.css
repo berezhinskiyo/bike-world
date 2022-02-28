@@ -1,5 +1,6 @@
 .info__img
 {
+	grid-area: img;
 	box-sizing: border-box;
 	width: 610px;
 	height: 836px;

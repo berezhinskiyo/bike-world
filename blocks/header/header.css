@@ -8,3 +8,14 @@
 	padding: 28px 120px 28px 120px;
 }
 
+@media all and (max-width: 320px) {
+	.header {
+		display: flex;
+		flex-direction: row;
+		justify-content: end;
+		box-sizing: border-box;
+		width: 320px;
+		margin: 0;
+		padding: 0;
+	}
+}

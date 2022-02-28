@@ -1,0 +1,11 @@
+.bikes__slider__item__img{
+	width: 340px;
+	height: 340px;
+	padding: 20px;
+	background-color: #f4f4f4;
+	background-repeat: no-repeat;
+	background-clip: padding-box;
+	background-position: center;
+	border-radius: 20px;
+	filter: drop-shadow(0 20px 140px rgba(0, 0, 0, 0.06));
+}

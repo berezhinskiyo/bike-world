@@ -1,0 +1,5 @@
+.info__title
+{
+	grid-area: title;
+	margin-top: 80px;
+}

@@ -1,0 +1,8 @@
+.train{
+	display: flex;
+	flex-direction: row;
+	justify-content: left;
+	gap: 160px;
+	margin-top: 210px;
+	padding: 0 0 0	120px;
+}
