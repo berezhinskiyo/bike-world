@@ -4,5 +4,6 @@
 	justify-content: left;
 	gap: 42px;
 	margin: 0;
+	text-decoration: none;
 	list-style-type: none;
 }

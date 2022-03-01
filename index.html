@@ -12,24 +12,31 @@
 
 <body class="page">
 	<header class="header">
-		<nav>
+		<nav class="header_nav">
+
 			<ul class="header__links">
 				<li>
-					<a class="header__link  interactive-item" href="#">
+					<a class="header__link  interactive-item" href="#road">
 						Покрытия и градиенты
 					</a>
 				</li>
 				<li>
-					<a class="header__link  interactive-item" href="#">
+					<a class="header__link  interactive-item" href="#bikes">
 						Велосипеды
 					</a>
 				</li>
 				<li>
-					<a class="header__link interactive-item" href="#">
+					<a class="header__link interactive-item" href="#train">
 						Тренировки
 					</a>
 				</li>
 			</ul>
+			<div class="header__button interactive-item">
+				<div class="header__button__line"></div>
+				<div class="header__button__line"></div>
+				<div class="header__button__line"></div>
+
+			</div>
 		</nav>
 	</header>
 	<main class="main">
@@ -55,6 +62,7 @@
 			</div>
 		</section>
 		<section class="quote">
+			<div class="page-breaker"></div>
 			<div class="quote__img"></div>
 			<div class="quote__details">
 				<h2 class="quote__details__title">«Катайся много или мало, долго или коротко, как хочешь - но катайся»
@@ -65,12 +73,13 @@
 				</div>
 			</div>
 		</section>
-		<section class="swiper bike-type">
-			<h1 class="section-title">Шоссе</h1>
-			<p class="section-text">На шоссейном велосипеде можно ездить по асфальту на разных градиентах: будь то горы
+		<section class="swiper bike-type" id="road">
+			<h1 class="section-title bike-type__title">Шоссе</h1>
+			<p class="section-text bike-type__text">На шоссейном велосипеде можно ездить по асфальту на разных
+				градиентах: будь то горы
 				или равнины. Гонки проходят в командном пелотоне, но тренироваться можно и самостоятельно.</p>
 
-			<div class="swiper-wrapper">
+			<div class="swiper-wrapper bike-type__slider">
 
 				<div class="swiper-slide">
 					<img class="bike-type__slider__image" src="./images/slider1.png" alt="">
@@ -91,7 +100,7 @@
 				<div class="bike-type__button-bar__button bike-type__button-bar__button_right"></div>
 			</div>
 		</section>
-		<section class="bikes">
+		<section class="bikes" id="bikes">
 			<div class="bikes__header">
 				<h1 class="section-title">Велосипеды</h1>
 				<ul class="bikes__header__links">
@@ -111,29 +120,32 @@
 
 			<ul class="bikes__slider">
 				<li>
-					<div class="bikes__slider__item">
+					<a href="https://www.sigmasports.com/item/Cervelo/Caledonia-5-Ultegra-Disc-Road-Bike-2021/RDEN "
+						class="bikes__slider__item">
 						<div id="bike-first-img" class="bikes__slider__item__img_first bikes__slider__item__img"></div>
 						<p id="bike-first-name" class="bikes__slider__item__name">Cervelo Caledonia-5</p>
-					</div>
+					</a>
 				</li>
 				<li>
-					<div class="bikes__slider__item">
+					<a href="https://www.sigmasports.com/item/Cannondale/SystemSix-HiMOD-Ultegra-Di2-Disc-Road-Bike-2021/R82J"
+						class="bikes__slider__item">
 						<div id="bike-second-img" class="bikes__slider__item__img bikes__slider__item__img_second">
 						</div>
 						<p id="bike-second-name" class="bikes__slider__item__name">Cannondale Systemsix Himod</p>
-					</div>
+					</a>
 				</li>
 				<li>
-					<div class="bikes__slider__item">
+					<a href="https://www.sigmasports.com/item/Trek/Domane-SL-7-Force-eTap-AXS-Disc-Road-Bike-2021/RULF"
+						class="bikes__slider__item">
 						<div id="bike-third-img" class="bikes__slider__item__img bikes__slider__item__img_third"></div>
 						<p id="bike-third-name" class="bikes__slider__item__name">Trek Domane SL-7</p>
-					</div>
+					</a>
 				</li>
 			</ul>
 
 		</section>
 
-		<section class="train">
+		<section class="train" id="train">
 
 			<div class="train__details">
 				<h1 class="section-title">Тренировки</h1>
@@ -163,8 +175,11 @@
 
 			<form class="footer__form">
 				<label class="footer__form__title" for="subscribe">Подпишитесь на рассылку —</label>
-				<input class="footer__form__input" type="text" id="subscribe" name="subscribe">
-				<!--button class="footer__form__btn" type="button">Найти</button-->
+				<div class="footer__form__input-box">
+					<input class="footer__form__input-box__input" type="text" id="subscribe" name="subscribe"
+						placeholder="Ваш e-mail">
+					<button class="footer__form__input-box__btn" type="button">Ok</button>
+				</div>
 			</form>
 
 			<div class="footer__switcher-box">

@@ -16,6 +16,7 @@
 	text-align: center;
 	text-decoration: none;
 	border: 0;
+	border-radius: 4px;
 	transition: all 0.3s;
 }
 
@@ -44,4 +45,12 @@
 
 .info__link:hover::before {
 	width: 100%;
+}
+
+@media all and (max-width: 320px) {
+	.info__link {
+		width: 284px;
+		height: 46px;
+		margin-top: 40px;
+	}
 }

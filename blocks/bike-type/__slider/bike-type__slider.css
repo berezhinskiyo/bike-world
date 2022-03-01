@@ -1,5 +1,6 @@
 .bike-type__slider
 {
 	position: relative;
+	grid-area: slider;
 	box-sizing: border-box;
 }

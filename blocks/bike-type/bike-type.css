@@ -1,9 +1,26 @@
 .bike-type{
-	display: flex;
-	flex-direction: column;
-	justify-content: left;
-	gap: 50px;
+	display: grid;
+	grid-template-rows: auto auto auto auto;
+	grid-template-columns: 100%;
+	grid-template-areas:
+		'title'
+		'text'
+		'slider'
+		'button-bar';
 	width: calc(1440px - 120px);
 	margin-top: 120px;
 	padding: 0 0 0	120px;
+}
+
+@media all and (max-width: 320px) {
+	.bike-type {
+		grid-template-rows: auto auto auto;
+		grid-template-columns: auto auto;
+		grid-template-areas:
+			'title button-bar'
+			'slider slider'
+			'text text';
+		width: 100%;
+		margin-top: 40px;
+	}
 }

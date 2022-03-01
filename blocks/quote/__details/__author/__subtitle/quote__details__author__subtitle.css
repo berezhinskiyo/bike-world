@@ -12,3 +12,12 @@
 	text-align: left;
 	opacity: 0.7;
 }
+
+@media all and (max-width: 320px) {
+	.quote__details__author__subtitle {
+		margin-top: 4px;
+		font-size: 14px;
+		font-style: normal;
+		line-height: calc(22 / 14);
+	}
+}

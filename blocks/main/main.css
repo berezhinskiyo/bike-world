@@ -3,3 +3,11 @@
 	flex-direction: column;
 	padding: 0;
 }
+
+@media all and (max-width: 320px) {
+	.main
+		{
+		width: 320px;
+		padding: 0 18px;
+	}
+}

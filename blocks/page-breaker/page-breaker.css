@@ -1,0 +1,14 @@
+.page-breaker
+{
+	display: none;
+}
+
+@media all and (max-width: 320px) {
+	.page-breaker {
+		display: block;
+		width: 284px;
+		height: 0;
+		margin: 40px auto 0 auto;
+		border: 1px solid #e3e3e3;
+	}
+}

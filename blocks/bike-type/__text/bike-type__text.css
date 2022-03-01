@@ -1,12 +1,15 @@
-.info__text
+.bike-type__text
 {
 	grid-area: text;
 	margin-top: 50px;
+	margin-bottom: 80px;
 }
 
 @media all and (max-width: 320px) {
-	.info__text{
+	.bike-type__text{
 		width: 284px;
 		margin-top: 40px;
+		margin-bottom: 80px;
+
 	}
 }

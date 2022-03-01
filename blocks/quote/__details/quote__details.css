@@ -4,3 +4,10 @@
 	justify-content: space-between;
 	box-sizing: border-box;
 }
+
+@media all and (max-width: 320px) {
+	.quote__details {
+
+		margin-top: 40px 0 40px 0;
+	}
+}

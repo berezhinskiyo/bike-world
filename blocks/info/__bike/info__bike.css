@@ -13,3 +13,13 @@
 	border-radius: 20px;
 	filter: drop-shadow(-20px 60px 220px rgba(0, 0, 0, 0.2));
 }
+
+@media all and (max-width: 320px) {
+	.info__bike {
+		top: 311px;
+		left: 0;
+		width: 234px;
+		height: 160px;
+		background-size: 180px 138px;
+	}
+}

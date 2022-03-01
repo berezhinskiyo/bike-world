@@ -7,3 +7,8 @@
 	box-sizing: border-box;
 	padding: calc(167px - 50px) 0 0 0;
 }
+@media all and (max-width: 320px) {
+	.info__bike-block {
+		display: none;
+	}
+}

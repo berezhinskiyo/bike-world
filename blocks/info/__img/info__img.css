@@ -8,3 +8,12 @@
 	background: url('../../../images/title_image1.png');
 	background-repeat: no-repeat;
 }
+
+@media all and (max-width: 320px) {
+	.info__img {
+		width: 254px;
+		height: 348px;
+		margin: 40px auto 0 28px;
+		background-size: cover;
+	}
+}

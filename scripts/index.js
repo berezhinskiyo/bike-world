@@ -9,6 +9,8 @@ const bikeSecondName = document.querySelector('#bike-second-name');
 const bikeThirdImg = document.querySelector('#bike-third-img');
 const bikeThirdName = document.querySelector('#bike-third-name');
 
+const bikesItems = document.querySelectorAll('.bikes__slider__item');
+
 const bikeType = document.querySelector('.bike-type');
 const bikeTypeTitle = bikeType.querySelector('.section-title');
 const bikeTypeText = bikeType.querySelector('.section-text');
@@ -17,6 +19,26 @@ const icon = document.querySelector('.bike-type__slider__image__icon');
 
 const prev = document.querySelector('.bike-type__button-bar__button_left');
 const next = document.querySelector('.bike-type__button-bar__button_right');
+
+const footerSearchBtn = document.querySelector('.footer__form__input-box__btn');
+const footerSearchInput = document.querySelector('.footer__form__input-box__input');
+
+footerSearchInput.addEventListener('change', () => {
+	if (footerSearchInput.value.length > 0) {
+		footerSearchBtn.style.visibility = 'visible';
+	} else {
+		footerSearchBtn.style.visibility = 'hidden';
+	}
+});
+footerSearchBtn.addEventListener('click', () => {
+
+	if (footerSearchInput.value.length > 0) {
+		footerSearchInput.value = '';
+		footerSearchInput.placeholder = 'Круто!'
+		footerSearchBtn.style.visibility = 'hidden';
+	}
+});
+
 
 const swiper = new Swiper(".bike-type", {
 	slidesPerView: 2,
@@ -71,6 +93,9 @@ function initSlider() {
 		bikeSecondName.innerText = 'Cannondale Systemsix Himod';
 		bikeThirdImg.style.backgroundImage = "url('./images/road-bike_trek.png')";
 		bikeThirdName.innerText = 'Cannondale Systemsix Himod';
+		bikesItems[0].href = 'https://www.sigmasports.com/item/Cervelo/Caledonia-5-Ultegra-Disc-Road-Bike-2021/RDEN';
+		bikesItems[1].href = 'https://www.sigmasports.com/item/Cannondale/SystemSix-HiMOD-Ultegra-Di2-Disc-Road-Bike-2021/R82J	';
+		bikesItems[2].href = 'https://www.sigmasports.com/item/Cannondale/SystemSix-HiMOD-Ultegra-Di2-Disc-Road-Bike-2021/R82J';
 
 		activateLink(roadLink);
 		deactivateLink(gravelLink);
@@ -83,6 +108,10 @@ function initSlider() {
 		bikeSecondName.innerText = 'Specialized S-Works Diverge';
 		bikeThirdImg.style.backgroundImage = "url('./images/gravel_cannpndale.png')";
 		bikeThirdName.innerText = 'Cannondale Topstone Lefty 3';
+		bikesItems[0].href = 'https://www.sigmasports.com/item/Cervelo/Aspero-GRX-810-1x-Disc-Gravel-Bike-2021/RJDE';
+		bikesItems[1].href = 'https://www.sigmasports.com/item/Specialized/S-Works-Diverge-Gravel-Bike-2020/NVJ9';
+		bikesItems[2].href = 'https://www.sigmasports.com/item/Cannondale/Topstone-Carbon-Lefty-3-Disc-Gravel-Road-Bike-2021/PUC8';
+
 
 		activateLink(gravelLink);
 		deactivateLink(roadLink);
@@ -95,6 +124,9 @@ function initSlider() {
 		bikeSecondName.innerText = 'BMC Timemachine 01 ONE';
 		bikeThirdImg.style.backgroundImage = "url('./images/tt-cervelo.png')";
 		bikeThirdName.innerText = 'Cervelo P-Series';
+		bikesItems[0].href = 'https://www.sigmasports.com/item/Specialized/S-Works-Shiv-Disc-Limited-Edition-Triathlon-Bike-2019/K8P9 ';
+		bikesItems[1].href = 'https://www.sigmasports.com/item/BMC/Timemachine-01-One-Force-Disc-TT-Triathlon-Bike-2021/S835';
+		bikesItems[2].href = ' https://www.sigmasports.com/item/Cervelo/P-Series-Ultegra-Di2-TT-Triathlon-Bike-2021/RM6Q';
 
 		activateLink(ttLink);
 		deactivateLink(roadLink);

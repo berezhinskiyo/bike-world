@@ -14,9 +14,15 @@
 
 @media all and (max-width: 320px) {
 	.info {
-		position: relative;
-		width: 320px;
-		margin-top: 40px;
+		grid-template-rows: auto auto auto auto;
+		grid-template-columns: auto;
+		grid-template-areas:
+			'title'
+			'img'
+			'text'
+			'link';
+		width: 100%;
+		margin: 0 0 40px 0;
 		padding: 0;
 	}
 }
