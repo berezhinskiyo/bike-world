@@ -4,4 +4,11 @@
 	flex-direction: row;
 	justify-content: space-between;
 	margin: 24px 123px 60px 0;
+
+}
+@media all and (max-width: 320px) {
+	.footer__switcher-box{
+		width: 100%;
+		margin: 99px 0 0 0;
+	}
 }

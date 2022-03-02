@@ -1,0 +1,24 @@
+.bikes__custom-select{
+	display: none;
+}
+
+@media all and (max-width: 320px) {
+	.bikes__custom-select {
+		display: block;
+		box-sizing: border-box;
+		width: 114px;
+		margin-top: 40px;
+		padding: 8px 0 8px 16px;
+		color: #151515;
+		font-weight: 600;
+		font-size: 11px;
+		font-style: normal;
+		line-height: calc(14 / 11);
+		background-color: #f4f4f4;
+		border: 1px solid #e3e3e3;
+		border-radius: 2px;
+		outline: none;
+		-webkit-appearance: button;
+		appearance: button;
+	}
+}

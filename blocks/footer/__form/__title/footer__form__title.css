@@ -10,3 +10,9 @@
 	line-height: calc(32 / 24);
 	text-align: left;
 }
+
+@media all and (max-width: 320px) {
+	.footer__form__title{
+		margin: 40px auto 0 0;
+	}
+}

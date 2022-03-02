@@ -73,6 +73,7 @@
 				</div>
 			</div>
 		</section>
+		<div class="page-breaker"></div>
 		<section class="swiper bike-type" id="road">
 			<h1 class="section-title bike-type__title">Шоссе</h1>
 			<p class="section-text bike-type__text">На шоссейном велосипеде можно ездить по асфальту на разных
@@ -100,7 +101,8 @@
 				<div class="bike-type__button-bar__button bike-type__button-bar__button_right"></div>
 			</div>
 		</section>
-		<section class="bikes" id="bikes">
+		<div class="page-breaker"></div>
+		<section class="bikes swiper" id="bikes">
 			<div class="bikes__header">
 				<h1 class="section-title">Велосипеды</h1>
 				<ul class="bikes__header__links">
@@ -116,62 +118,67 @@
 						ТТ
 					</li>
 				</ul>
+				<select id="select" class="bikes__custom-select">
+					<option value="0">Шоссе</option>
+					<option value="1">Гравел</option>
+					<option value="2">ТТ</option>
+				</select>
 			</div>
 
-			<ul class="bikes__slider">
-				<li>
+			<div class="bikes__slider swiper-wrapper">
+				<div class="swiper-slide">
 					<a href="https://www.sigmasports.com/item/Cervelo/Caledonia-5-Ultegra-Disc-Road-Bike-2021/RDEN "
 						class="bikes__slider__item">
 						<div id="bike-first-img" class="bikes__slider__item__img_first bikes__slider__item__img"></div>
 						<p id="bike-first-name" class="bikes__slider__item__name">Cervelo Caledonia-5</p>
 					</a>
-				</li>
-				<li>
+				</div>
+				<div class="swiper-slide">
 					<a href="https://www.sigmasports.com/item/Cannondale/SystemSix-HiMOD-Ultegra-Di2-Disc-Road-Bike-2021/R82J"
 						class="bikes__slider__item">
 						<div id="bike-second-img" class="bikes__slider__item__img bikes__slider__item__img_second">
 						</div>
 						<p id="bike-second-name" class="bikes__slider__item__name">Cannondale Systemsix Himod</p>
 					</a>
-				</li>
-				<li>
+				</div>
+				<div class="swiper-slide">
 					<a href="https://www.sigmasports.com/item/Trek/Domane-SL-7-Force-eTap-AXS-Disc-Road-Bike-2021/RULF"
 						class="bikes__slider__item">
 						<div id="bike-third-img" class="bikes__slider__item__img bikes__slider__item__img_third"></div>
 						<p id="bike-third-name" class="bikes__slider__item__name">Trek Domane SL-7</p>
 					</a>
+				</div>
+			</div>
+			<div class="bike-type__swiper-pagination"></div>
+
+
+		</section>
+		<div class="page-breaker"></div>
+		<section class="train" id="train">
+
+
+			<h1 class="section-title train__title">Тренировки</h1>
+
+			<p class="section-text train__text">Чтобы найти маршрут для тренировки можно воспользоваться сервисом
+				Komoot, а
+				записать эти тренировки поможет приложение Strava, а также это приложение позволит построить
+				тренировочный план.</p>
+			<ul class="train__links">
+				<li>
+					<a class="train__links__item  interactive-item" href="https://www.strava.com" target="_blank">
+						Strava
+					</a>
+				</li>
+				<li>
+					<a class="train__links__item  interactive-item" href="https://www.komoot.com" target="_blank">
+						Komoot
+					</a>
 				</li>
 			</ul>
 
-		</section>
-
-		<section class="train" id="train">
-
-			<div class="train__details">
-				<h1 class="section-title">Тренировки</h1>
-
-				<p class="section-text">Чтобы найти маршрут для тренировки можно воспользоваться сервисом Komoot, а
-					записать эти тренировки поможет приложение Strava, а также это приложение позволит построить
-					тренировочный план.</p>
-				<ul class="train__details__links">
-					<li>
-						<a class="train__details__links__item  interactive-item" href="https://www.strava.com"
-							target="_blank">
-							Strava
-						</a>
-					</li>
-					<li>
-						<a class="train__details__links__item  interactive-item" href="https://www.komoot.com"
-							target="_blank">
-							Komoot
-						</a>
-					</li>
-				</ul>
-			</div>
 			<div class="train__img"></div>
 		</section>
 		<footer class="footer">
-
 
 			<form class="footer__form">
 				<label class="footer__form__title" for="subscribe">Подпишитесь на рассылку —</label>
@@ -184,14 +191,15 @@
 
 			<div class="footer__switcher-box">
 				<p class="footer__copyright">&copy; Road Club 2021</p>
-				<div class="footer__switcher">
-					<div class="footer__switcher__button footer__switcher__button_light"></div>
-					<div class="footer__switcher__input">
-						<input type="checkbox" name="switch" id="switch" class="footer__switcher__input__cb">
-						<label for="switch" class="footer__switcher__input__label"></label>
+				<div class="footer__switcher switcher">
+					<div class="switcher__button switcher__button_light"></div>
+					<div class="switcher__input">
+						<input type="checkbox" name="switch" id="switch" class="switcher__input__cb">
+						<label for="switch" class="switcher__input__label"></label>
 					</div>
-					<div class="footer__switcher__button footer__switcher__button_dark"></div>
+					<div class="switcher__button switcher__button_dark"></div>
 				</div>
+				<div class="footer__logo"></div>
 			</div>
 		</footer>
 	</main>

@@ -1,0 +1,15 @@
+.train__links{
+	display: flex;
+	grid-area: links;
+	flex-direction: row;
+	gap: 30px;
+	margin-top: calc(182px - 50px);
+	list-style-type: none;
+	padding: 0;
+}
+@media all and (max-width: 320px) {
+	.train__links {
+		margin: 0;
+		padding: 0;
+	}
+}

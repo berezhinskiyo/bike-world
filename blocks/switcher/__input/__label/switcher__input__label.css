@@ -1,4 +1,4 @@
-.footer__switcher__input__label
+.switcher__input__label
 {
 	position: relative;
 	display: block;
@@ -11,7 +11,7 @@
 	transition: 0.5s;
 }
 
-.footer__switcher__input__label::after {
+.switcher__input__label::after {
 	content: '';
 	position: absolute;
 	top: 2px;
@@ -23,15 +23,15 @@
 	transition: 0.5s;
 }
 
-.footer__switcher__input__cb:checked + .footer__switcher__input__label::after {
+.switcher__input__cb:checked + .footer__switcher__input__label::after {
 	left: calc(100% - 2px);
 	transform: translateX(-100%);
 }
 
-.footer__switcher__input__cb:checked + .footer__switcher__input__label {
+.switcher__input__cb:checked + .footer__switcher__input__label {
 	background-color: #ffffff;
 }
 
-.footer__switcher__input__label:active::after {
+.switcher__input__label:active::after {
 	width: 26px;
 }

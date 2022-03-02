@@ -1,4 +1,4 @@
-.bike-type__text
+.train__text
 {
 	grid-area: text;
 	margin-top: 50px;
@@ -6,7 +6,7 @@
 }
 
 @media all and (max-width: 320px) {
-	.bike-type__text{
+	.train__text{
 		width: 284px;
 		margin-top: 0;
 		margin-bottom: 40px;

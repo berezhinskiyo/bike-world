@@ -1,11 +1,10 @@
-.bike-type__title
+.train__title
 {
 	grid-area: title;
-	margin-top: 80px;
 }
 
 @media all and (max-width: 320px) {
-	.bike-type__title{
+	.train__title{
 		margin-top: 0;
 	}
 }

@@ -1,11 +1,20 @@
 .bikes__slider__item__img{
-	width: 340px;
-	height: 340px;
-	padding: 20px;
+	width: 380px;
+	height: 380px;
+	background-size: 340px 340px;
 	background-color: #f4f4f4;
 	background-repeat: no-repeat;
-	background-clip: padding-box;
 	background-position: center;
+	background-clip: padding-box;
 	border-radius: 20px;
-	filter: drop-shadow(0 20px 140px rgba(0, 0, 0, 0.06));
+	filter: drop-shadow(0 20px 140px rgba(0, 0, 0, 0.05));
+}
+
+@media all and (max-width: 320px) {
+	.bikes__slider__item__img {
+		width: 284px;
+		height: 306px;
+		padding: 0;
+		background-size: 254px 254px;
+	}
 }

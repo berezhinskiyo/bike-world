@@ -1,11 +1,15 @@
 .bikes__slider{
-	display: flex;
-	flex-direction: row;
-	justify-content: left;
-	gap: 30px;
 	box-sizing: border-box;
-	width: 1200px;
+	width: 100%;
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
 }
+
+@media all and (max-width: 320px) {
+	.bikes__slider {
+		width: 100%;
+		margin-top: 20px;
+	}
+}
+

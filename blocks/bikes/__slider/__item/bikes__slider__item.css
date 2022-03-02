@@ -2,8 +2,14 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: left;
-	gap: 42px;
 	margin: 0;
+	padding: 0;
 	text-decoration: none;
 	list-style-type: none;
+}
+
+@media all and (max-width: 320px) {
+	.bikes__slider__item {
+		gap: 3px;
+	}
 }
