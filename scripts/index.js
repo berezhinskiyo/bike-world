@@ -25,10 +25,18 @@ const next = document.querySelector('.bike-type__button-bar__button_right');
 const footerSearchBtn = document.querySelector('.footer__form__input-box__btn');
 const footerSearchInput = document.querySelector('.footer__form__input-box__input');
 
+const mediaQuery = window.matchMedia('(max-width: 320px)');
 const headerButton = document.querySelector('.header__button');
 
+mediaQuery.addEventListener('change', (e) => {
+	if (e.matches) {
+
+		console.log('Media Query Matched!');
+	}
+});
+
 headerButton.addEventListener('click', () => {
- 
+	console.log('headerButton');
 });
 
 footerSearchInput.addEventListener('input', () => {

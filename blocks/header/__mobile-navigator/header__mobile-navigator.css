@@ -1,0 +1,6 @@
+.header__mobile-navigator{
+	display: flex;
+	flex-direction: column;
+	width: 320px;
+	height: calc(566px +74px);
+}

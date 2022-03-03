@@ -6,6 +6,6 @@
 	.header__button {
 		display: block;
 		margin: 28px 0 28px auto;
-		padding: 0;
+		padding: 0 16px 0 0;
 	}
 }

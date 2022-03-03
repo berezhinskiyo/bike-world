@@ -15,9 +15,11 @@
 
 @media all and (max-width: 320px) {
 	.quote__details__author__subtitle {
+		width: 100%;
 		margin-top: 4px;
 		font-size: 14px;
 		font-style: normal;
 		line-height: calc(22 / 14);
+
 	}
 }
