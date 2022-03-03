@@ -25,6 +25,12 @@ const next = document.querySelector('.bike-type__button-bar__button_right');
 const footerSearchBtn = document.querySelector('.footer__form__input-box__btn');
 const footerSearchInput = document.querySelector('.footer__form__input-box__input');
 
+const headerButton = document.querySelector('.header__button');
+
+headerButton.addEventListener('click', () => {
+ 
+});
+
 footerSearchInput.addEventListener('input', () => {
 	if (footerSearchInput.value.length > 0) {
 		footerSearchBtn.style.visibility = 'visible';

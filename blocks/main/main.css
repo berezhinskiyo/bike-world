@@ -5,8 +5,7 @@
 }
 
 @media all and (max-width: 320px) {
-	.main
-		{
+	.main{
 		width: 320px;
 		padding: 0;
 	}

@@ -22,7 +22,7 @@
 			'text text';
 		row-gap: 40px;
 		width: 100%;
-		margin-top: 40px;
+		margin: 40px 16px 0 16px;
 		padding: 0;
 	}
 }
