@@ -1,9 +1,0 @@
-.bike-type__swiper-pagination{
-	display: none;
-}
-@media all and (max-width: 320px) {
-	.bike-type__swiper-pagination{
-		display: block;
-		margin: 20px 0 0 149px;
-	}
-}

@@ -1,7 +1,0 @@
-.quote__details__author
-{
-	display: flex;
-	flex-direction: column;
-	gap: 6px;
-	box-sizing: border-box;
-}

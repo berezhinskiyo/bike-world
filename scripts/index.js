@@ -8,15 +8,11 @@ const bikeSecondImg = document.querySelector('#bike-second-img');
 const bikeSecondName = document.querySelector('#bike-second-name');
 const bikeThirdImg = document.querySelector('#bike-third-img');
 const bikeThirdName = document.querySelector('#bike-third-name');
-
 const bikeSelect = document.querySelector('#select');
-
 const bikesItems = document.querySelectorAll('.bikes__slider__item');
-
 const bikeType = document.querySelector('.bike-type');
 const bikeTypeTitle = bikeType.querySelector('.section-title');
 const bikeTypeText = bikeType.querySelector('.section-text');
-
 const icon = document.querySelector('.bike-type__slider__image__icon');
 
 const prev = document.querySelector('.bike-type__button-bar__button_left');
@@ -197,9 +193,12 @@ const swiperBike = new Swiper(".bikes", {
 			spaceBetween: 0,
 			pagination: {
 				el: ".bike-type__swiper-pagination",
-			}
+			},
+			loop: true
 		},
 		321: {
+
+			loop: true,
 			slidesPerView: 3,
 			spaceBetween: 0
 		}
@@ -207,7 +206,7 @@ const swiperBike = new Swiper(".bikes", {
 	cssMode: true,
 	mousewheel: false,
 	keyboard: false,
-	loop: true
+
 });
 
 const classList = ["url('../images/road_curve.svg')", "url('../images/gravel_curve.svg')", "url('../images/tt_curve.svg')"];
@@ -254,7 +253,7 @@ function roadLinkInit() {
 	bikeSecondImg.style.backgroundImage = "url('./images/road-bike_cannondale.png')";
 	bikeSecondName.innerText = 'Cannondale Systemsix Himod';
 	bikeThirdImg.style.backgroundImage = "url('./images/road-bike_trek.png')";
-	bikeThirdName.innerText = 'Cannondale Systemsix Himod';
+	bikeThirdName.innerText = 'Trek Domane SL-7';
 	bikesItems[0].href = 'https://www.sigmasports.com/item/Cervelo/Caledonia-5-Ultegra-Disc-Road-Bike-2021/RDEN';
 	bikesItems[1].href = 'https://www.sigmasports.com/item/Cannondale/SystemSix-HiMOD-Ultegra-Di2-Disc-Road-Bike-2021/R82J	';
 	bikesItems[2].href = 'https://www.sigmasports.com/item/Cannondale/SystemSix-HiMOD-Ultegra-Di2-Disc-Road-Bike-2021/R82J';
