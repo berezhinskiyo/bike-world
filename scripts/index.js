@@ -198,7 +198,7 @@ const swiperBike = new Swiper(".bikes", {
 		},
 		321: {
 
-			loop: true,
+			loop: false,
 			slidesPerView: 3,
 			spaceBetween: 0
 		}
