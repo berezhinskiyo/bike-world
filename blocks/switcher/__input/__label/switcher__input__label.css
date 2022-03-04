@@ -23,14 +23,6 @@
 	transition: 0.5s;
 }
 
-.switcher__input__cb:checked + .footer__switcher__input__label::after {
-	left: calc(100% - 2px);
-	transform: translateX(-100%);
-}
-
-.switcher__input__cb:checked + .footer__switcher__input__label {
-	background-color: #ffffff;
-}
 
 .switcher__input__label:active::after {
 	width: 26px;

@@ -15,10 +15,6 @@
 	background-repeat: no-repeat;
 }
 
-.bike-type__slider__image__icon:root
-{
-	--background-image: url('../../../../../images/road_curve.svg');
-}
 
 .bike-type__slider__image__icon::before
 {

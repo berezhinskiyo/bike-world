@@ -1,6 +1,12 @@
-.header__mobile-navigator{
-	display: flex;
+.header__mobile-navigator {
+	display: none;
 	flex-direction: column;
+	justify-content: center;
+	box-sizing: border-box;
 	width: 320px;
-	height: calc(566px +74px);
+	height: 640px;
+	margin: 0;
+	padding: 0;
+	background-color: #f4f4f4;
 }
+

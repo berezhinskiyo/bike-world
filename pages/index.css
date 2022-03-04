@@ -1,6 +1,9 @@
 
 @import url('../vendor/normalize.css');
 @import url('../vendor/fonts.css');
+@import url('../styles/style.css');
+
+/*
 @import url('../blocks/page/page.css');
 @import url('../blocks/page-breaker/page-breaker.css');
 @import url('../blocks/interactive-item/interactive-item.css');
@@ -11,6 +14,8 @@
 @import url('../blocks/header/header.css');
 @import url('../blocks/header/__button/header__button.css');
 @import url('../blocks/header/__button/__line/header__button__line.css');
+@import url('../blocks/header/__mobile-navigator/header__mobile-navigator.css');
+@import url('../blocks/header/__mobile-navigator/__close-button/header__mobile-navigator__close-button.css');
 @import url('../blocks/main//main.css');
 @import url('../blocks/info/info.css');
 @import url('../blocks/info/__title/info__title.css');
@@ -67,7 +72,6 @@
 @import url('../blocks/footer/__form/__input-box/__input/footer__form__input-box__input.css');
 @import url('../blocks/footer/__form/__title/footer__form__title.css');
 @import url('../blocks/footer/__copyright/footer__copyright.css');
-@import url('../blocks/footer/__switcher/footer__switcher.css');
 @import url('../blocks/footer/__switcher-box/footer__switcher-box.css');
 @import url('../blocks/footer/__logo/footer__logo.css');
 @import url('../blocks/switcher/switcher.css');
@@ -78,3 +82,4 @@
 @import url('../blocks/switcher/__input/__cb/switcher__input__cb.css');
 @import url('../blocks/switcher/__input/__label/switcher__input__label.css');
 
+*/

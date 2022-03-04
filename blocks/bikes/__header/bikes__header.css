@@ -10,8 +10,6 @@
 
 @media all and (max-width: 320px) {
 	.bikes__header {
-		flex-direction: column;
-		width: 100%;
-		margin-top: 40px;
+		c
 	}
 }

@@ -12,9 +12,8 @@
 
 <body class="page">
 	<header class="header">
-		<nav class="header_nav">
-
-			<ul class="header__links">
+		<nav>
+			<ul id="header_links" class="header__links">
 				<li>
 					<a class="header__link  interactive-item" href="#road">
 						Покрытия и градиенты
@@ -39,8 +38,8 @@
 			</div>
 		</nav>
 		<div class="header__mobile-navigator">
-			<div class="header__mobile-navigator__close_button"></div>
-			<ul class="header__links">
+			<div class="header__mobile-navigator__close-button"></div>
+			<ul id="header_links_mobile" class="header__links">
 				<li>
 					<a class="header__link  interactive-item" href="#road">
 						Покрытия и градиенты
@@ -57,11 +56,11 @@
 					</a>
 				</li>
 			</ul>
-			<div class="footer__switcher switcher">
+			<div id="footer_switcher_mobile" class="footer__switcher switcher">
 				<div class="switcher__button switcher__button_light"></div>
 				<div class="switcher__input">
-					<input type="checkbox" name="switch" id="switch" class="switcher__input__cb">
-					<label for="switch" class="switcher__input__label"></label>
+					<input type="checkbox" name="switch" id="switch_mobile" class="switcher__input__cb">
+					<label for="switch_mobile" class="switcher__input__label"></label>
 				</div>
 				<div class="switcher__button switcher__button_dark"></div>
 			</div>
@@ -221,7 +220,7 @@
 
 			<div class="footer__switcher-box">
 				<p class="footer__copyright">&copy; Road Club 2021</p>
-				<div class="footer__switcher switcher">
+				<div id="footer_switcher" class="switcher">
 					<div class="switcher__button switcher__button_light"></div>
 					<div class="switcher__input">
 						<input type="checkbox" name="switch" id="switch" class="switcher__input__cb">

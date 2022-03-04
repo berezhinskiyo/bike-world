@@ -4,3 +4,12 @@
 	height: 0;
 	visibility: hidden;
 }
+
+.switcher__input__cb:checked + .switcher__input__label::after {
+	left: calc(100% - 2px);
+	transform: translateX(-100%);
+}
+
+.switcher__input__cb:checked + .switcher__input__label {
+	background-color: #ffffff;
+}
