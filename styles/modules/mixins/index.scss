@@ -18,7 +18,7 @@
 }
 
 @mixin mobile {
-	@media screen and (max-width: $mobile-1) {
+	@media screen and (max-width: $mobile) {
 		@content;
 	}
 }
