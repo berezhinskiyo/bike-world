@@ -1,4 +1,4 @@
-
+const mobileWidth = 1439;
 const roadLink = document.querySelector('#road-link');
 const gravelLink = document.querySelector('#gravel-link');
 const ttLink = document.querySelector('#tt-link');
@@ -14,28 +14,19 @@ const bikeType = document.querySelector('.bike-type');
 const bikeTypeTitle = bikeType.querySelector('.section-title');
 const bikeTypeText = bikeType.querySelector('.section-text');
 const icon = document.querySelector('.bike-type__slider__image__icon');
-
 const prev = document.querySelector('.bike-type__button-bar__button_left');
 const next = document.querySelector('.bike-type__button-bar__button_right');
-
 const footerSearchBtn = document.querySelector('.footer__form__input-box__btn');
 const footerSearchInput = document.querySelector('.footer__form__input-box__input');
-
-
 const headerButton = document.querySelector('.header__button');
 const closeButton = document.querySelector('.header__mobile-navigator__close-button');
 const mobileNavigator = document.querySelector('.header__mobile-navigator');
-
 const headerLinks = document.querySelector('#header_links');
 const headerLinksMobile = document.querySelector('#header_links_mobile');
-
 const footerSwitcher = document.querySelector('#footer_switcher');
 const footerSwitcherMobile = document.querySelector('#footer_switcher_mobile');
-
 const switchFooter = document.querySelector('#switch');
 const switchMobile = document.querySelector('#switch_mobile');
-
-const mediaQuery = window.matchMedia('(max-width: 320px)');
 
 const sectionTitles = document.querySelectorAll('.section-title');
 const sectionText = document.querySelectorAll('.section-text');
@@ -68,6 +59,7 @@ const bikeTypeButtonBarButton = document.querySelectorAll('.bike-type__button-ba
 const bikeTypeButtonBarButtonLeft = document.querySelector('.bike-type__button-bar__button_left');
 const bikeTypeButtonBarButtonRight = document.querySelector('.bike-type__button-bar__button_right');
 
+const mediaQuery = window.matchMedia('(max-width: ' + mobileWidth + 'px)');
 
 switchFooter.addEventListener('change', themeChange);
 switchMobile.addEventListener('change', themeChange);
@@ -114,19 +106,16 @@ function themeChange(e) {
 	headerMobileNavigatorCloseButton.classList.toggle('header__mobile-navigator__close-button__theme_dark');
 	bikeTypeButtonBarButtonLeft.classList.toggle('bike-type__button-bar__button_left__theme_dark');
 	bikeTypeButtonBarButtonRight.classList.toggle('bike-type__button-bar__button_right__theme_dark');
-
-
-
-
-
 }
 
 function initFilter(e) {
 	if (e.matches) {
-		headerLinks.style.display = 'none';
+		//headerLinks.style.display = 'none';
 		footerSwitcher.style.display = 'none';
+		headerButton.style.display = 'block';
 	} else {
-		headerLinks.style.display = 'flex';
+		//headerLinks.style.display = 'flex';
+		headerButton.style.display = 'none';
 		footerSwitcher.style.display = 'flex';
 		mobileNavigator.style.display = 'none';
 	}
@@ -136,12 +125,14 @@ initFilter(mediaQuery);
 mediaQuery.addEventListener("change", initFilter);
 
 headerButton.addEventListener('click', () => {
+	headerLinksMobile.style.display = 'flex';
 	mobileNavigator.style.display = 'flex';
 	headerButton.style.display = 'none';
 
 });
 
 closeButton.addEventListener('click', () => {
+	headerLinksMobile.style.display = 'none	';
 	mobileNavigator.style.display = 'none';
 	headerButton.style.display = 'block';
 });
@@ -171,7 +162,7 @@ const swiper = new Swiper(".bike-type", {
 			slidesPerView: 1,
 			spaceBetween: 0
 		},
-		321: {
+		1440: {
 			slidesPerView: 2,
 			spaceBetween: 40
 		}
@@ -196,7 +187,7 @@ const swiperBike = new Swiper(".bikes", {
 			},
 			loop: true
 		},
-		321: {
+		1440: {
 
 			loop: false,
 			slidesPerView: 3,
