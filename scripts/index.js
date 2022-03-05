@@ -1,4 +1,5 @@
-const mobileWidth = 1439;
+const mobileWidth = 1023;
+const desctopWidth = 1439;
 const roadLink = document.querySelector('#road-link');
 const gravelLink = document.querySelector('#gravel-link');
 const ttLink = document.querySelector('#tt-link');
@@ -59,7 +60,7 @@ const bikeTypeButtonBarButton = document.querySelectorAll('.bike-type__button-ba
 const bikeTypeButtonBarButtonLeft = document.querySelector('.bike-type__button-bar__button_left');
 const bikeTypeButtonBarButtonRight = document.querySelector('.bike-type__button-bar__button_right');
 
-const mediaQuery = window.matchMedia('(max-width: ' + mobileWidth + 'px)');
+
 
 switchFooter.addEventListener('change', themeChange);
 switchMobile.addEventListener('change', themeChange);
@@ -107,6 +108,8 @@ function themeChange(e) {
 	bikeTypeButtonBarButtonLeft.classList.toggle('bike-type__button-bar__button_left__theme_dark');
 	bikeTypeButtonBarButtonRight.classList.toggle('bike-type__button-bar__button_right__theme_dark');
 }
+
+const mediaQuery = window.matchMedia('(max-width: ' + mobileWidth + 'px)');
 
 function initFilter(e) {
 	if (e.matches) {
@@ -162,7 +165,7 @@ const swiper = new Swiper(".bike-type", {
 			slidesPerView: 1,
 			spaceBetween: 0
 		},
-		1440: {
+		1024: {
 			slidesPerView: 2,
 			spaceBetween: 40
 		}
@@ -187,7 +190,7 @@ const swiperBike = new Swiper(".bikes", {
 			},
 			loop: true
 		},
-		1440: {
+		1024: {
 
 			loop: false,
 			slidesPerView: 3,
