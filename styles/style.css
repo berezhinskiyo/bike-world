@@ -380,7 +380,6 @@
   gap: 30px;
   box-sizing: border-box;
   align-items: center;
-  padding: 167px 0 376px 0;
 }
 @media screen and (max-width: 1439px) {
   .info__bike-block {
@@ -755,7 +754,6 @@
 }
 .bike-type__title {
   grid-area: title;
-  margin-top: 80px;
 }
 @media screen and (max-width: 1023px) {
   .bike-type__title {
@@ -1010,7 +1008,7 @@
   grid-template-areas: "title img" "text img" "links img";
   width: 100%;
   margin: 120px 0 0 0;
-  padding: 0 120px 60px 120px;
+  padding: 0 120px 0 120px;
 }
 @media screen and (max-width: 1439px) {
   .train {
@@ -1057,7 +1055,8 @@
   flex-direction: row;
   grid-area: links;
   gap: 30px;
-  margin-top: 132px;
+  align-self: flex-end;
+  margin: 0;
   list-style-type: none;
   padding: 0;
 }
