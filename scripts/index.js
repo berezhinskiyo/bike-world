@@ -1,5 +1,4 @@
 const mobileWidth = 1023;
-const desctopWidth = 1439;
 const roadLink = document.querySelector('#road-link');
 const gravelLink = document.querySelector('#gravel-link');
 const ttLink = document.querySelector('#tt-link');
@@ -82,7 +81,7 @@ function themeChange(e) {
 	trainLinksItem.forEach(t => { t.classList.toggle("train__links__item__theme_dark"); });
 	headerLink.forEach(t => { t.classList.toggle("header__link__theme_dark"); });
 	headerButtonLine.forEach(t => { t.classList.toggle("header__button__line__theme_dark"); });
-	bikesSliderItemName.forEach(t => { t.classList.toggle("bikes__slider__item__name__theme_dark"); });
+	bikesSliderItemName.forEach(t => { t.classList.toggle("bikes__slider__slide__item__name__theme_dark"); });
 	bikesHeaderLinksItem.forEach(t => { t.classList.toggle("bikes__header__links__item__theme_dark"); });
 	bikeTypeButtonBarButton.forEach(t => { t.classList.toggle("bike-type__button-bar__button__theme_dark"); });
 

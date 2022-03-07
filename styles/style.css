@@ -973,6 +973,11 @@
   font-style: normal;
   line-height: 1.2222222222;
 }
+@media screen and (max-width: 1439px) {
+  .bikes__slider__slide__item__name {
+    padding: 0 0 0 20px;
+  }
+}
 @media screen and (max-width: 1023px) {
   .bikes__slider__slide__item__name {
     margin: 0 auto;
