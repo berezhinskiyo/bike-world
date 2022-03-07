@@ -20,6 +20,11 @@
   margin: 0 auto;
   padding: 0;
 }
+@media screen and (max-width: 1439px) {
+  .main {
+    width: 1024px;
+  }
+}
 @media screen and (max-width: 1023px) {
   .main {
     width: 320px;
@@ -319,6 +324,7 @@
   width: 100%;
   height: 100%;
   background-color: #24b47e;
+  border-radius: 4px;
 }
 .info__link::before {
   content: "";
@@ -329,6 +335,7 @@
   width: 0%;
   height: 100%;
   background-color: #319e75;
+  border-radius: 4px;
   transition: all 0.3s;
 }
 .info__link:hover::before {
@@ -346,6 +353,7 @@
   box-sizing: border-box;
   width: 610px;
   height: 836px;
+  justify-self: end;
   margin-top: 20px;
   background: url("../images/title_image1.png");
   background-repeat: no-repeat;
@@ -442,18 +450,19 @@
 }
 
 .quote {
+  box-sizing: border-box;
   display: flex;
   flex-direction: row;
   justify-content: left;
   gap: 80px;
-  width: 1320px;
+  width: 100%;
   margin-top: 120px;
+  padding: 0 120px;
 }
 @media screen and (max-width: 1439px) {
   .quote {
-    width: 1004px;
     gap: 10px;
-    padding: 0 0 0 20px;
+    padding: 0 20px;
   }
 }
 @media screen and (max-width: 1023px) {
@@ -462,7 +471,6 @@
     flex-direction: column;
     gap: 0;
     box-sizing: border-box;
-    width: 100%;
     padding: 0 18px;
     margin: 0 0 40px 0;
   }
@@ -648,16 +656,16 @@
 .bike-type__button-bar__button__theme_dark {
   background-color: #434343;
 }
-.bike-type__button-bar__button_left {
+.bike-type__button-bar__button_type_left {
   background-image: url("../images/left-vector.svg");
 }
-.bike-type__button-bar__button_left__theme_dark {
+.bike-type__button-bar__button_type_left__theme_dark {
   background-image: url("../images/left-vector_dark.svg");
 }
-.bike-type__button-bar__button_right {
+.bike-type__button-bar__button_type_right {
   background-image: url("../images/right-vector.svg");
 }
-.bike-type__button-bar__button_right__theme_dark {
+.bike-type__button-bar__button_type_right__theme_dark {
   background-image: url("../images/right-vector_dark.svg");
 }
 .bike-type__slider {
@@ -733,15 +741,6 @@
     left: 18px;
   }
 }
-.bike-type__swiper-pagination {
-  display: none;
-}
-@media screen and (max-width: 1023px) {
-  .bike-type__swiper-pagination {
-    display: block;
-    margin: 20px 0 0 130px;
-  }
-}
 .bike-type__text {
   grid-area: text;
   margin-top: 50px;
@@ -767,23 +766,21 @@
 .bikes {
   display: flex;
   flex-direction: column;
-  justify-content: left;
+  justify-content: center;
   gap: 120px;
   box-sizing: border-box;
-  width: 1440px;
+  width: 100%;
   margin-top: 120px;
-  padding: 0 0 0 120px;
+  padding: 0 120px;
 }
 @media screen and (max-width: 1439px) {
   .bikes {
-    width: 1004px;
-    padding: 0 0 0 20px;
+    padding: 0 20px;
   }
 }
 @media screen and (max-width: 1023px) {
   .bikes {
     gap: 0;
-    width: 100%;
     box-sizing: border-box;
     width: 100%;
     padding: 0 18px;
@@ -824,13 +821,13 @@
   flex-direction: row;
   justify-content: space-between;
   box-sizing: border-box;
-  width: 1200px;
+  width: 100%;
   margin: 0;
   padding: 0;
 }
 @media screen and (max-width: 1439px) {
   .bikes__header {
-    width: 800px;
+    width: 100%;
   }
 }
 @media screen and (max-width: 1023px) {
@@ -879,10 +876,19 @@
 }
 .bikes__slider {
   box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  gap: 0;
   width: 100%;
   margin: 0;
   padding: 0;
   list-style-type: none;
+}
+@media screen and (max-width: 1439px) {
+  .bikes__slider {
+    width: 100%;
+    gap: 5px;
+  }
 }
 @media screen and (max-width: 1023px) {
   .bikes__slider {
@@ -890,7 +896,20 @@
     margin-top: 20px;
   }
 }
-.bikes__slider__item {
+.bikes__slider__slide {
+  width: 380px;
+}
+@media screen and (max-width: 1439px) {
+  .bikes__slider__slide {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .bikes__slider__slide {
+    width: 284px;
+  }
+}
+.bikes__slider__slide__item {
   display: flex;
   flex-direction: column;
   justify-content: left;
@@ -900,11 +919,11 @@
   list-style-type: none;
 }
 @media screen and (max-width: 1023px) {
-  .bikes__slider__item {
+  .bikes__slider__slide__item {
     gap: 3px;
   }
 }
-.bikes__slider__item__img {
+.bikes__slider__slide__item__img {
   position: relative;
   width: 380px;
   height: 380px;
@@ -917,34 +936,34 @@
   filter: drop-shadow(0 10px 10px rgba(0, 0, 0, 0.05));
 }
 @media screen and (max-width: 1439px) {
-  .bikes__slider__item__img {
+  .bikes__slider__slide__item__img {
     width: 300px;
     height: 300px;
     background-size: 270px 270px;
   }
 }
 @media screen and (max-width: 1023px) {
-  .bikes__slider__item__img {
+  .bikes__slider__slide__item__img {
     width: 284px;
     height: 306px;
     padding: 0;
     background-size: 254px 254px;
   }
 }
-.bikes__slider__item__img__theme_dark {
+.bikes__slider__slide__item__img__theme_dark {
   background-color: #ffffff;
   color: #ffffff;
 }
-.bikes__slider__item__img_first {
+.bikes__slider__slide__item__img_first {
   background-image: url("../images/gravel-specialized.png");
 }
-.bikes__slider__item__img_second {
+.bikes__slider__slide__item__img_second {
   background-image: url("../images/gravel_cannpndale.png");
 }
-.bikes__slider__item__img_third {
+.bikes__slider__slide__item__img_third {
   background-image: url("../images/gravel-specialized.png");
 }
-.bikes__slider__item__name {
+.bikes__slider__slide__item__name {
   margin: 22px auto 0 0;
   padding: 0;
   color: #151515;
@@ -955,7 +974,7 @@
   line-height: 1.2222222222;
 }
 @media screen and (max-width: 1023px) {
-  .bikes__slider__item__name {
+  .bikes__slider__slide__item__name {
     margin: 0 auto;
     font-family: "Inter", "Arial", sans-serif;
     font-weight: 600;
@@ -964,22 +983,33 @@
     line-height: 2;
   }
 }
-.bikes__slider__item__name__theme_dark {
+.bikes__slider__slide__item__name__theme_dark {
   color: #ffffff;
+}
+.bikes__swiper-pagination {
+  display: none;
+}
+@media screen and (max-width: 1023px) {
+  .bikes__swiper-pagination {
+    display: block;
+    margin: 20px auto 0 auto;
+    padding-left: 126px;
+  }
 }
 
 .train {
+  box-sizing: border-box;
   display: grid;
   grid-template-rows: auto auto auto;
   grid-template-columns: auto auto;
   grid-template-areas: "title img" "text img" "links img";
+  width: 100%;
   margin: 120px 0 0 0;
-  padding: 0 0 60px 120px;
+  padding: 0 120px 60px 120px;
 }
 @media screen and (max-width: 1439px) {
   .train {
-    width: 1004px;
-    padding: 0 0 0 20px;
+    padding: 0 20px;
   }
 }
 @media screen and (max-width: 1023px) {
@@ -989,8 +1019,6 @@
     grid-template-columns: 100%;
     grid-template-areas: "title" "img" "text" "links";
     row-gap: 40px;
-    box-sizing: border-box;
-    width: 100%;
     padding: 0 18px;
     margin: 60px 0 60px 0;
   }
@@ -1002,6 +1030,7 @@
   height: 460px;
   margin: 0;
   padding: 0;
+  justify-self: end;
   background: url("../images/trainigs.png");
   background-repeat: no-repeat;
 }
@@ -1079,20 +1108,19 @@
   flex-direction: column;
   box-sizing: border-box;
   width: 100%;
-  margin-top: 120px;
-  padding: 0 0 0 120px;
+  margin: 120px 0 0 0;
+  padding: 0 120px;
   background-color: #efefef;
 }
 @media screen and (max-width: 1439px) {
   .footer {
-    padding: 0 0 0 20px;
+    padding: 0 20px;
   }
 }
 @media screen and (max-width: 1023px) {
   .footer {
-    width: 100%;
-    margin: 0;
-    padding: 60px 18px 16px 18px;
+    margin: 0 auto;
+    padding: 60px 0 16px 0;
   }
 }
 .footer__theme_dark {
@@ -1125,10 +1153,23 @@
   color: #565656;
 }
 .footer__form {
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   border: 0;
-  width: 100%;
+  width: 1200px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 1439px) {
+  .footer__form {
+    width: 984px;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .footer__form {
+    width: 320px;
+    padding: 60px 18px 16px 18px;
+  }
 }
 .footer__form__input-box {
   display: inline;
@@ -1242,15 +1283,23 @@
   }
 }
 .footer__switcher-box {
+  box-sizing: border-box;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 24px 123px 60px 0;
+  width: 1200px;
+  margin: 24px auto 60px auto;
+}
+@media screen and (max-width: 1439px) {
+  .footer__switcher-box {
+    width: 984px;
+  }
 }
 @media screen and (max-width: 1023px) {
   .footer__switcher-box {
-    width: 100%;
-    margin: 99px 0 0 0;
+    width: 320px;
+    padding: 99px 18px 16px 18px;
+    margin: 0 auto;
   }
 }
 

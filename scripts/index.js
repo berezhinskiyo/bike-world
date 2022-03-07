@@ -10,13 +10,13 @@ const bikeSecondName = document.querySelector('#bike-second-name');
 const bikeThirdImg = document.querySelector('#bike-third-img');
 const bikeThirdName = document.querySelector('#bike-third-name');
 const bikeSelect = document.querySelector('#select');
-const bikesItems = document.querySelectorAll('.bikes__slider__item');
+const bikesItems = document.querySelectorAll('.bikes__slider__slide__item');
 const bikeType = document.querySelector('.bike-type');
 const bikeTypeTitle = bikeType.querySelector('.section-title');
 const bikeTypeText = bikeType.querySelector('.section-text');
 const icon = document.querySelector('.bike-type__slider__image__icon');
-const prev = document.querySelector('.bike-type__button-bar__button_left');
-const next = document.querySelector('.bike-type__button-bar__button_right');
+const prev = document.querySelector('.bike-type__button-bar__button_type_left');
+const next = document.querySelector('.bike-type__button-bar__button_type_right');
 const footerSearchBtn = document.querySelector('.footer__form__input-box__btn');
 const footerSearchInput = document.querySelector('.footer__form__input-box__input');
 const headerButton = document.querySelector('.header__button');
@@ -25,7 +25,7 @@ const mobileNavigator = document.querySelector('.header__mobile-navigator');
 const headerLinks = document.querySelector('#header_links');
 const headerLinksMobile = document.querySelector('#header_links_mobile');
 const footerSwitcher = document.querySelector('#footer_switcher');
-const footerSwitcherMobile = document.querySelector('#footer_switcher_mobile');
+const footerSwitcherMobile = document.querySelector('#header_switcher_mobile');
 const switchFooter = document.querySelector('#switch');
 const switchMobile = document.querySelector('#switch_mobile');
 
@@ -36,8 +36,8 @@ const main = document.querySelector('.main');
 const bikesCustomSelect = document.querySelector('.bikes__custom-select');
 const bikesHeaderLinksItem = document.querySelectorAll('.bikes__header__links__item');
 const bikesHeaderLinksItemInactive = document.querySelector('.bikes__header__links__item_inactive');
-const bikesSliderItemImg = document.querySelector('.bikes__slider__item__img');
-const bikesSliderItemName = document.querySelectorAll('.bikes__slider__item__name');
+const bikesSliderItemImg = document.querySelector('.bikes__slider__slide__item__img');
+const bikesSliderItemName = document.querySelectorAll('.bikes__slider__slide__item__name');
 const footer = document.querySelector('.footer');
 const footerСopyright = document.querySelector('.footer__copyright');
 const footerFormInputBoxBtn = document.querySelector('.footer__form__input-box__btn');
@@ -57,8 +57,8 @@ const switcherButtonLight = document.querySelector('.switcher__button_light');
 const switcherButtonDark = document.querySelector('.switcher__button_dark');
 const headerMobileNavigatorCloseButton = document.querySelector('.header__mobile-navigator__close-button');
 const bikeTypeButtonBarButton = document.querySelectorAll('.bike-type__button-bar__button');
-const bikeTypeButtonBarButtonLeft = document.querySelector('.bike-type__button-bar__button_left');
-const bikeTypeButtonBarButtonRight = document.querySelector('.bike-type__button-bar__button_right');
+const bikeTypeButtonBarButtonLeft = document.querySelector('.bike-type__button-bar__button_type_left');
+const bikeTypeButtonBarButtonRight = document.querySelector('.bike-type__button-bar__button_type_right');
 
 
 
@@ -105,8 +105,8 @@ function themeChange(e) {
 	switcherButtonDark.classList.toggle('switcher__button_dark__theme_dark');
 	switcherButtonLight.classList.toggle('switcher__button_light__theme_dark');
 	headerMobileNavigatorCloseButton.classList.toggle('header__mobile-navigator__close-button__theme_dark');
-	bikeTypeButtonBarButtonLeft.classList.toggle('bike-type__button-bar__button_left__theme_dark');
-	bikeTypeButtonBarButtonRight.classList.toggle('bike-type__button-bar__button_right__theme_dark');
+	bikeTypeButtonBarButtonLeft.classList.toggle('bike-type__button-bar__button_type_left__theme_dark');
+	bikeTypeButtonBarButtonRight.classList.toggle('bike-type__button-bar__button_type_right__theme_dark');
 }
 
 const mediaQuery = window.matchMedia('(max-width: ' + mobileWidth + 'px)');
@@ -167,7 +167,7 @@ const swiper = new Swiper(".bike-type", {
 		},
 		1024: {
 			slidesPerView: 2,
-			spaceBetween: 40
+			spaceBetween: 60
 		}
 	},
 	cssMode: true,
@@ -177,7 +177,7 @@ const swiper = new Swiper(".bike-type", {
 });
 
 
-
+// configure Swiper to use modules
 const swiperBike = new Swiper(".bikes", {
 	slidesPerView: 3,
 	spaceBetween: 0,
@@ -186,7 +186,7 @@ const swiperBike = new Swiper(".bikes", {
 			slidesPerView: 1,
 			spaceBetween: 0,
 			pagination: {
-				el: ".bike-type__swiper-pagination",
+				el: ".bikes__swiper-pagination",
 			},
 			loop: true
 		},
@@ -194,12 +194,13 @@ const swiperBike = new Swiper(".bikes", {
 
 			loop: false,
 			slidesPerView: 3,
-			spaceBetween: 0
+			spaceBetween: 30
 		}
 	},
 	cssMode: true,
 	mousewheel: false,
 	keyboard: false,
+
 
 });
 
