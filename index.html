@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Road сlub</title>
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="pages/index.css" />
+
+</head>
+
+<body class="page">
+	<header class="header">
+		<nav>
+			<ul id="header_links" class="header__links">
+				<li>
+					<a class="header__link  interactive-item" href="#road">
+						Покрытия и градиенты
+					</a>
+				</li>
+				<li>
+					<a class="header__link  interactive-item" href="#bikes">
+						Велосипеды
+					</a>
+				</li>
+				<li>
+					<a class="header__link interactive-item" href="#train">
+						Тренировки
+					</a>
+				</li>
+			</ul>
+			<div class="header__button interactive-item">
+				<div class="header__button__line"></div>
+				<div class="header__button__line"></div>
+				<div class="header__button__line"></div>
+
+			</div>
+		</nav>
+		<div class="header__mobile-navigator">
+			<div class="header__mobile-navigator__close-button"></div>
+			<ul id="header_links_mobile" class="header__links">
+				<li>
+					<a class="header__link  interactive-item" href="#road">
+						Покрытия и градиенты
+					</a>
+				</li>
+				<li>
+					<a class="header__link  interactive-item" href="#bikes">
+						Велосипеды
+					</a>
+				</li>
+				<li>
+					<a class="header__link interactive-item" href="#train">
+						Тренировки
+					</a>
+				</li>
+			</ul>
+			<div id="header_switcher_mobile" class="switcher">
+				<div class="switcher__button switcher__button_light"></div>
+				<div class="switcher__input">
+					<input type="checkbox" name="switch" id="switch_mobile" class="switcher__input__cb">
+					<label for="switch_mobile" class="switcher__input__label"></label>
+				</div>
+				<div class="switcher__button switcher__button_dark"></div>
+			</div>
+
+		</div>
+	</header>
+	<main class="main">
+		<section class="info">
+
+			<h1 class="section-title info__title">Шоссе, ТТ
+				и Грэвел</h1>
+			<p class="section-text info__text">
+				Триатлонные старты, горные серпантины или грейвел заезды по живописным маршрутам – нужно только
+				определиться с выбором велосипеда и отправиться в путь.
+			</p>
+			<a class="info__link" href="#">
+				Подробнее
+			</a>
+			<div class="info__bike-block">
+				<p class="info__bike-block__name">Cannondale Systemsix</p>
+				<div class="info__bike-block__img"></div>
+			</div>
+
+			<div class="info__img"></div>
+			<div class="info__bike-frame">
+				<div class="info__bike"></div>
+			</div>
+		</section>
+		<div class="page-breaker"></div>
+		<section class="quote">
+
+			<div class="quote__img"></div>
+			<div class="quote__details">
+				<h3 class="quote__details__title">«Катайся много или мало, долго или коротко, как хочешь - но катайся»
+				</h3>
+				<div class="quote__details__author">
+					<p class="quote__details__author__name">Эдди Меркс</p>
+					<p class="quote__details__author__subtitle">Велогонщик</p>
+				</div>
+			</div>
+		</section>
+		<div class="page-breaker"></div>
+		<section class="swiper bike-type" id="road">
+			<h2 class="section-title bike-type__title">Шоссе</h2>
+			<p class="section-text bike-type__text">На шоссейном велосипеде можно ездить по асфальту на разных
+				градиентах: будь то горы
+				или равнины. Гонки проходят в командном пелотоне, но тренироваться можно и самостоятельно.</p>
+
+			<div class="swiper-wrapper bike-type__slider">
+
+				<div class="swiper-slide">
+					<img class="bike-type__slider__image" src="./images/slider1.png" alt="Шоссе">
+				</div>
+
+				<div class="swiper-slide">
+					<img class="bike-type__slider__image" src="./images/slider2.png" alt="Гравел">
+				</div>
+
+				<div class="swiper-slide">
+					<img class="bike-type__slider__image" src="./images/slider3.png" alt="ТТ">
+				</div>
+
+			</div>
+			<div class="bike-type__slider__image__icon"></div>
+			<div class="bike-type__button-bar">
+				<div class="bike-type__button-bar__button bike-type__button-bar__button_type_left"></div>
+				<div class="bike-type__button-bar__button bike-type__button-bar__button_type_right"></div>
+			</div>
+		</section>
+		<div class="page-breaker"></div>
+		<section class="bikes swiper" id="bikes">
+			<div class="bikes__header">
+				<h2 class="section-title">Велосипеды</h2>
+				<ul class="bikes__header__links">
+					<li id="road-link" class="bikes__header__links__item">
+						Шоссе
+					</li>
+					<li id="gravel-link" class="bikes__header__links__item  bikes__header__links__item_inactive">
+						Гравел
+					</li>
+					<li id="tt-link" class="bikes__header__links__item bikes__header__links__item_inactive">
+						ТТ
+					</li>
+				</ul>
+				<select id="select" class="bikes__custom-select">
+					<option value="0">Шоссе</option>
+					<option value="1">Гравел</option>
+					<option value="2">ТТ</option>
+				</select>
+			</div>
+
+			<div class="bikes__slider swiper-wrapper">
+				<div class="bikes__slider__slide swiper-slide">
+					<a href="https://www.sigmasports.com/item/Cervelo/Caledonia-5-Ultegra-Disc-Road-Bike-2021/RDEN "
+						class="bikes__slider__slide__item">
+						<div id="bike-first-img"
+							class="bikes__slider__slide__item__img_first bikes__slider__slide__item__img"></div>
+						<p id="bike-first-name" class="bikes__slider__slide__item__name">Cervelo Caledonia-5</p>
+					</a>
+				</div>
+				<div class="bikes__slider__slide swiper-slide">
+					<a href="https://www.sigmasports.com/item/Cannondale/SystemSix-HiMOD-Ultegra-Di2-Disc-Road-Bike-2021/R82J"
+						class="bikes__slider__slide__item">
+						<div id="bike-second-img"
+							class="bikes__slider__slide__item__img bikes__slider__slide__item__img_second">
+						</div>
+						<p id="bike-second-name" class="bikes__slider__slide__item__name">Cannondale Systemsix Himod</p>
+					</a>
+				</div>
+				<div class="bikes__slider__slide swiper-slide">
+					<a href="https://www.sigmasports.com/item/Trek/Domane-SL-7-Force-eTap-AXS-Disc-Road-Bike-2021/RULF"
+						class="bikes__slider__slide__item">
+						<div id="bike-third-img"
+							class="bikes__slider__slide__item__img bikes__slider__slide__item__img_third"></div>
+						<p id="bike-third-name" class="bikes__slider__slide__item__name">Trek Domane SL-7</p>
+					</a>
+				</div>
+			</div>
+			<div class="bikes__swiper-pagination "></div>
+
+
+		</section>
+		<div class="page-breaker"></div>
+		<section class="train" id="train">
+
+
+			<h2 class="section-title train__title">Тренировки</h2>
+
+			<p class="section-text train__text">Чтобы найти маршрут для тренировки можно воспользоваться сервисом
+				Komoot, а
+				записать эти тренировки поможет приложение Strava, а также это приложение позволит построить
+				тренировочный план.</p>
+			<ul class="train__links">
+				<li>
+					<a class="train__links__item  interactive-item" href="https://www.strava.com" target="_blank">
+						Strava
+					</a>
+				</li>
+				<li>
+					<a class="train__links__item  interactive-item" href="https://www.komoot.com" target="_blank">
+						Komoot
+					</a>
+				</li>
+			</ul>
+
+			<div class="train__img"></div>
+		</section>
+	</main>
+	<footer class="footer">
+
+		<form class="footer__form">
+			<label class="footer__form__title" for="subscribe">Подпишитесь на рассылку —</label>
+			<div class="footer__form__input-box">
+				<input class="footer__form__input-box__input" type="text" id="subscribe" name="subscribe"
+					placeholder="Ваш e-mail">
+				<button class="footer__form__input-box__btn" type="button">Ok</button>
+			</div>
+		</form>
+
+		<div class="footer__switcher-box">
+			<p class="footer__copyright">&copy; Road Club 2021</p>
+			<div id="footer_switcher" class="switcher">
+				<div class="switcher__button switcher__button_light"></div>
+				<div class="switcher__input">
+					<input type="checkbox" name="switch" id="switch" class="switcher__input__cb">
+					<label for="switch" class="switcher__input__label"></label>
+				</div>
+				<div class="switcher__button switcher__button_dark"></div>
+			</div>
+			<div class="footer__logo"></div>
+		</div>
+	</footer>
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script src="./scripts/index.js" defer=""></script>
+</body>
+
+</html>
